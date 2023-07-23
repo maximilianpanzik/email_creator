@@ -1,3 +1,9 @@
 name: email_creator
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+  - https://repo.anaconda.com/pkgs/msys2
+  - defaults
 dependencies:
-- python
+  - python
+prefix: C:\Users\maxim\anaconda3\envs\email_creator

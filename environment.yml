@@ -5,4 +5,6 @@ channels:
 dependencies:
   - python
   - pandas
+  - xlrd
+  - openpyxl
 prefix: /Users/max/anaconda3/envs/email_creator

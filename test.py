@@ -1,5 +1,4 @@
 import pandas as pd
-import os
 excel_file = "data_list.xlsx"
 csv_file = "data_list.csv"
 #df = pd.read_excel(excel_file)
@@ -19,15 +18,14 @@ for ind in df.index:
         else:
             value = str(value)
 
-        print(value)
-
         lines = lines.replace(col, value)
-        print("test")
 
     print(lines)
-    mail_address = (df["mail-address"][ind]).replace(".","_")
-    filename = f'mail_output/{mail_address}_Bestellnummer_.txt'
+    mail_address = (df["mail-address"][ind])
+    if (pd.isna(mail_address)) == False:
+        mail_address = mail_address.replace(".","_")
+        filename = f'mail_output/{mail_address}_Bestellnummer_.txt'
 
-    with open(filename, 'w') as f:
-        f.write(lines)
+        with open(filename, 'w') as f:
+            f.write(lines)
 

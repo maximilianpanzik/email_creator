@@ -1,0 +1,6 @@
+keyword5 keyword1,
+Ihre Bestellung mit der Nummer keyword6 ist bereit zur Abholung.
+
+Mit freundlichen Grüßen
+Max
+

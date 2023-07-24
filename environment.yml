@@ -1,9 +1,8 @@
 name: email_creator
 channels:
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
-  - https://repo.anaconda.com/pkgs/msys2
+  - open3d-admin
   - defaults
 dependencies:
   - python
-prefix: C:\Users\maxim\anaconda3\envs\email_creator
+  - pandas
+prefix: /Users/max/anaconda3/envs/email_creator
